@@ -1,0 +1,4 @@
+﻿  Source.cpp
+c:\users\tayfu\desktop\ders\iwanoff\lab 2\task1.5\project3\source.cpp(4): warning C4326: return type of 'main' should be 'int' instead of 'void'
+c:\users\tayfu\desktop\ders\iwanoff\lab 2\task1.5\project3\source.cpp(77): warning C4101: 't': unreferenced local variable
+  Project3.vcxproj -> C:\Users\tayfu\Desktop\ders\iwanoff\lab 2\task1.5\Debug\Project3.exe

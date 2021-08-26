@@ -1,0 +1,73 @@
+Source1.cpp
+
+#include "Header.h"
+
+double y(double x, int n)
+{
+	double rez = 1;
+	if (x > 0)
+		for (int i = 1; i <= n; i++)
+			for (int j = 0; j < n; j++)
+				rez *= x - i - j;
+	else
+	{
+		rez = 0;
+		for (int i = 0; i <= n; i++)
+			rez += (x - i)*(x - i);
+	}
+	return rez;
+}
+
+int count(funcT f, double a, double b, double h, int n)
+{
+	int N = 0;
+	while (a <= b)
+	{
+		if (f(a, n) == 0)
+			N++;
+		a += h;
+	}
+	return N;
+}
+
+
+
+Header.h
+
+
+#pragma once
+
+#include <iostream>
+
+using namespace std;
+
+typedef double(*funcT)(double, int);
+double y(double x, int n);
+int count(funcT f, double a, double b, double h, int n);
+
+
+Source.cpp
+
+#include "Header.h"
+
+int main()
+{
+	double h, a, b;
+	int n;
+	setlocale(0, "UKRAINIAN");
+	cout << "¬ведiть значенн€ початку iнтервалу: ";
+	cin >> a;
+	cout << endl << "¬ведiть значенн€ кiнц€ iнтервалу: ";
+	cin >> b;
+	cout << endl << "¬ведiть крок iнтервалу: ";
+	cin >> h;
+	cout << endl << "¬ведiть значенн€ n: ";
+	cin >> n;
+	if (a > b)
+		cout << endl << "ѕочаток не може бути бiльше кiнц€" << endl;
+	else
+		cout << endl << "quantity of roots = " << count(y, a, b, h, n) << endl;
+	system("pause");
+	return 0;
+}
+

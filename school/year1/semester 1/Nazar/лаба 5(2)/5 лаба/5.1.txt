@@ -1,0 +1,30 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+struct point
+{
+	int x, y, z;
+};
+
+int sqr(int a)
+{
+	return a*a;
+}
+
+double distance(point p1, point p2)
+{
+	return sqrt(sqr(p2.x - p1.x) + sqr(p2.y - p1.y) + sqr(p2.z - p1.z));
+}
+
+void main()
+{
+	point p1;
+	point p2;
+
+	cin >> p1.x >> p1.y >> p1.z;
+	cin >> p2.x >> p2.y >> p2.z;
+
+	cout << "distance = " << distance(p1, p2);
+}

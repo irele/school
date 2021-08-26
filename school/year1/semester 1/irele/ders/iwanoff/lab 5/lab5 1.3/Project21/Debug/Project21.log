@@ -1,0 +1,14 @@
+﻿  Source.cpp
+c:\users\tayfu\source\repos\project21\project21\source.cpp(39): warning C4018: '<': signed/unsigned mismatch
+c:\users\tayfu\source\repos\project21\project21\source.cpp(45): warning C4018: '<': signed/unsigned mismatch
+c:\users\tayfu\source\repos\project21\project21\source.cpp(47): warning C4018: '<': signed/unsigned mismatch
+c:\users\tayfu\source\repos\project21\project21\source.cpp(74): warning C4018: '<': signed/unsigned mismatch
+c:\users\tayfu\source\repos\project21\project21\source.cpp(76): warning C4018: '<': signed/unsigned mismatch
+c:\users\tayfu\source\repos\project21\project21\source.cpp(87): warning C4018: '<': signed/unsigned mismatch
+c:\users\tayfu\source\repos\project21\project21\source.cpp(98): warning C4018: '<': signed/unsigned mismatch
+c:\users\tayfu\source\repos\project21\project21\source.cpp(100): warning C4018: '<': signed/unsigned mismatch
+c:\users\tayfu\source\repos\project21\project21\source.cpp(117): warning C4018: '<': signed/unsigned mismatch
+c:\users\tayfu\source\repos\project21\project21\source.cpp(120): warning C4018: '<': signed/unsigned mismatch
+c:\users\tayfu\source\repos\project21\project21\source.cpp(123): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+c:\users\tayfu\source\repos\project21\project21\source.cpp(132): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Project21.vcxproj -> C:\Users\tayfu\source\repos\Project21\Debug\Project21.exe
